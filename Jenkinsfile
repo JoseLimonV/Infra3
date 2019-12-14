@@ -7,7 +7,7 @@ pipeline {
         timeout(time: 15, unit: 'MINUTES')    
     }
     stages {
-        stage('Build Packer')´{
+        stage('Build Packer') {
             steps {
                 sh 'chmod +x ./bash/build.sh'
                 sh './bash/build.sh'
